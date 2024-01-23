@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8000;
 const getTime = () => {
   let today = new Date().toISOString();
   let TodayTime = today.replace(/:/g, '-'); 
-  let filePath = `${__dirname}DateTime/${TodayTime}.txt`;
+  let filePath = `${__dirname}/DateTime/${TodayTime}.txt`;
 
   fs.writeFileSync(filePath, today, "utf8");
 

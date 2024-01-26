@@ -63,7 +63,6 @@ app.get("/getreadFiles", (req, res) => {
         }
 
         fileContents.push({ filename, data });
-
         if (index === array.length - 1) {
           // Send the response once all files have been read
           res.status(200).json(fileContents);
